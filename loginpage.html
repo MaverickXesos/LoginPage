@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background:black;
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(237, 174, 202, 1) 19%, rgba(235, 174, 203, 1) 58%, rgba(148, 187, 233, 1) 100%);
+        }
+
+        .parent {
+            font: 14px Arial, sans-serif;
+            width: 300px;
+            margin: 120px auto;
+            background-color: rgb(255, 255, 255);
+            padding: 28px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: inset 0 0 10px #000000, 0 0 10px #000000;
+        }
+
+        .input input {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        .checkbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .checkbox label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .checkbox input[type="checkbox"] {
+            margin: 0;
+        }
+
+        .submit button {
+            background-color: #1dbb08;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .form-links a {
+            color: #060606;
+            text-decoration: none;
+            border: 1px solid #4CAF50;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin: 0 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="parent">
+        <h2>Login Form</h2>
+        <p>
+            Sign in to your account<br>
+        </p>
+        <div class="input">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="input">
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="input-checkbox">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <a href="">Forget Password?</a>
+        </div>
+        <div class="input">
+        </div>
+
+        <div class="input submit">
+            <button type="submit">Login</button>
+        </div class="input links">
+        <div class="input">
+            or continue with
+        </div>
+
+        <div class="form-links" style="margin-top: 4%;">
+            <a href="https://www.google.com/"><i class="fa-brands fa-google"></i> Google</a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i> Github</a>
+        </div>
+        <div>
+            <p>Don't have an account? <a href="">Sign up</a></p>
+    </form>
+</body>
+
+</html>
